@@ -1,4 +1,4 @@
-/* 
+/*
   Selectores simples:
     - Selectores elementales
       - Selector universal > *
@@ -7,10 +7,16 @@
       - id > id del elemento (No es recomendable)
       - clase > clase del elemento (es recomendado usarlo)
       - otros atributos
+        [atributo]
+        [atributo=valor]
+        [atributo^=valor] (si empieza con el mismo nombre)
+        [atributo*=valor] (si conincide independientemente donde se encuentre)
+        [atributo$=valor] (si termina por esa palabra)
+        [atributo|=valor] (incluye la palabra y un guion)
   Selectores compuestos:
     - Selectores agrupados
     - Selectores combinados
-    - Pseudoclases - Pseudoelementos  
+    - Pseudoclases - Pseudoelementos
 */
 
 /* * {
@@ -43,4 +49,30 @@ li {
 
 .text {
   background-color: lightgreen;
+}
+
+/* Los estilos se aplican de arriba hacia abajo */
+
+[href] {
+  background-color: magenta;
+}
+
+[href="https://google.com"] {
+  background-color: yellow;
+}
+
+[href^=color] {
+  background-color: lightseagreen;
+}
+
+[href*="modo"] {
+  background-color: lightskyblue;
+}
+
+[href$="rojo"] {
+  background-color: lightcoral;
+}
+
+[lang|="en-GB"] {
+  background-color: burlywood;
 }
