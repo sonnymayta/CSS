@@ -4,13 +4,16 @@
       - Selector universal > *
       - Selector de tipo o etiqueta > Nombre de la etiqueta
     - Selectores de atributo
+      - id > id del elemento (No es recomendable)
+      - clase > clase del elemento (es recomendado usarlo)
+      - otros atributos
   Selectores compuestos:
     - Selectores agrupados
     - Selectores combinados
     - Pseudoclases - Pseudoelementos  
 */
 
-* {
+/* * {
   background-color: lightcoral;
 }
 
@@ -28,4 +31,16 @@ ul {
 
 li {
   background-color: yellow;
+} */
+
+#title {
+  background-color: lightgreen;
+}
+
+.title {
+  background-color: lightcoral;
+}
+
+.text {
+  background-color: lightgreen;
 }
