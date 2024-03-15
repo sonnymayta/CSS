@@ -16,6 +16,7 @@
   Selectores compuestos:
     - Selectores agrupados
     - Selectores combinados
+      - Selector desendiente (utilizar como maximo 2 elementos, solo tenemos acceso a los elementos por debajo)
     - Pseudoclases - Pseudoelementos
 */
 
@@ -83,4 +84,10 @@ li {
 .text-3,
 .text-4 {
   background-color: steelblue;
+}
+
+/* Selector desendiente */
+
+div .title-2 {
+  background-color: teal;
 }
