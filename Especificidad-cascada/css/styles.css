@@ -1,0 +1,38 @@
+h1 {
+  background-color: red;
+}
+
+.title {
+  background-color: blue;
+}
+
+#title {
+  background-color: green;
+}
+
+h1.title {
+  background-color: yellow;
+}
+
+h1#title {
+  background-color: purple;
+}
+
+h1.title#title {
+  background-color: tomato;
+}
+
+/* 
+  ¿Cómo funciona CSS?
+  
+    - Especificidad: Establece cómo de especifico es un selectorpara saber qué estilo aplicar.
+    El cálculo se realiza con la siguiente fórmula:
+      - Etiquetas y pseudoelementos 001
+      - Clases, atributos y pseudoclases 010
+      - Ids 100
+      - Estilos en linea 1000
+      ! important GANA A TODO Y NO SE USA
+
+    Cascada, herencia
+
+*/
