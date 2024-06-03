@@ -20,6 +20,7 @@
       por debajo)
       - Selector de hermano siguiente +
       - Selector de hermano siguientes ~
+      - Selector de hijo directo >
     - Pseudoclases - Pseudoelementos
 */
 
@@ -102,4 +103,9 @@ div .title-2 {
 
 .title-3 ~ p {
   background-color: lawngreen;
+}
+
+/* Selector de hijo directo */
+.container > p {
+  background-color: seagreen;
 }
