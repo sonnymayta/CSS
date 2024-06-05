@@ -1,0 +1,26 @@
+/* Ejemplo */
+
+.example {
+  display: grid;
+  transition: all .5s;
+  user-select: none;
+  background: linear-gradient(to bottom, white, black);
+}
+
+/* Prepros (revisar herramienta) */
+
+/* 
+  Prefijos propietarios
+
+  Son prefijos especificos del navegador que se añaden al CSS para garantizar que ciertas 
+  caracteristicas experimentales o no estandarizadas funcionen en navegadores especificos. Estos
+  prefijos permiten a los desarrolladores utilizar nuevas funcionalidades de manera uniforme.
+
+  Los prefijos propietarios permiten a los desarrolladores experimentar con nuevas funcionalidades 
+  y asegurarse de que sus sitios o aplicaciones web sean compatibles con las implementaciones 
+  específicas de cada navegador. Sin embargo, es importante recordar que su uso debe ser 
+  temporal, ya que con el tiempo, las propiedades CSS suelen estandarizarse y ser soportadas 
+  sin necesidad de prefijos.
+
+  Recomendado utiliza herramientas de preprocesamiento como autoprefixer.
+*/
