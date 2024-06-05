@@ -33,6 +33,6 @@ h1.title#title {
       - Estilos en linea 1000
       ! important GANA A TODO Y NO SE USA
 
-    Cascada, herencia
+    Cascada: Funciona siempre que la especificidad sobre el elemento sea la misma.
 
 */
