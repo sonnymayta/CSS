@@ -2,6 +2,16 @@
 /*  
   Herencia: Es la capacidad que tienen algunos elementos de heredar algunas propiedades de sus
   elementos contenedores (padres, abuelos, etc)
+
+  Herramienta de desarrollador del navegador
+  F12 o ctrl + shif + C
+
+  Elements > Styles: lo que se aplica a cada uno de los elementos
+  Elements > Computed: lista de las propiedades aplicadas y el porque se aplicaron. En esta
+  sección se pueden ver los casos de especificidad y cascada como tambien la ubicación de los 
+  estilos aplicados.
+
+  user agent stylesheet: Indica los estilos por defecto de un navegardor.
 */
 
 /* span hereda el color y el tamaño de la fuente */
