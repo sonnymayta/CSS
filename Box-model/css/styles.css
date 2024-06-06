@@ -15,34 +15,56 @@ body {
   width: 200px;
   height: 200px;
   margin: 50px 70px 90px 110px;
+  padding: 20px 30px 40px 50px;
 }
 
 .inline {
   background-color: lightcoral;
   color: inherit;
   margin-left: 100px;
+  padding: 0px 100px;
   /* 
   width: 200px;
   height: 200px; 
   */
 }
+
+.buttons {
+  background-color: steelblue;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.button {
+  margin-left: 120px;
+  padding: 25px 50px;
+}
 /* 
   Una caja contiene las siguientes propiedades
   - Contenido
   - Borde
-  - Padding
+  - Padding: Es la propiedad que nos permite generar espacio interno entre el borde y la caja.
+  Es un shorrthand (propiedad abreviada) que controla los 4 lados posibles a los que dar padding:
+  padding-top, padding-rigth, padding-bottom, padding-left.
   - Margin: Es la propiedad que nos permite generar espacio entre elementos. Es un shorthand
   (propiedad abreviada) que controla los 4 lados posibles a los que dar márgenes; margin-top,
   margin-right, margin-botton, margin-left.
-  Admite hasta 4 valores que van en el orden de las agujas del reloj.
+
+  Ambos admiten hasta 4 valores que van en el orden de las agujas del reloj.
     - 4 valores: top right botton left.
     - 3 valores: top right/left bottom.
     - 2 valores: top/botton left/right.
     - 1 valores: top/right/botton/left.
+
   - Width
   - Height
 
   NOTA
   - No puedemos dar medida a elementos en line, solo a elementos de tipo bloque.
   - Los elementos en linea solo tienen margenes a los lados.
+  - No establecer el margin y el padding con un selector universal.
+  - No sobreescribir atributos ya establecidos.
+  - Se recomienda que se tenga conocimiento de cada linea de código que se escribe y su razon de ser.
+  - Se utiliza margin cuando quieres saparar tu caja de los elementos que la rodean.
+  - Se utiliza padding cuando quieres aumentar el tamaño de la caja y los bordes del contenido.
 */
