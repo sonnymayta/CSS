@@ -38,11 +38,21 @@ body {
 .button {
   margin-left: 120px;
   padding: 25px 50px;
+  border: 20px solid red;
+  border-width: 20px;
+  border-style: solid;
+  border-color: blueviolet;
+  border-right-color: yellow;
+  border-right-width: 5px;
+  border-style: dashed;
 }
 /* 
   Una caja contiene las siguientes propiedades
   - Contenido
-  - Borde
+  - Borde: Es la propiedad que nos permite modificar el borde de la caja. Es un shorthand (propiedad
+  abreviada) que agrupa 3 propiedades: border-width, border-style, border-color; estas propiedades 
+  engloban los lados de la caja (top right botton left).
+    - styles: none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset.
   - Padding: Es la propiedad que nos permite generar espacio interno entre el borde y la caja.
   Es un shorrthand (propiedad abreviada) que controla los 4 lados posibles a los que dar padding:
   padding-top, padding-rigth, padding-bottom, padding-left.
