@@ -1,3 +1,8 @@
+/* Practica recomendada */
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: rgb(44, 44, 44);
   color: white;
@@ -16,6 +21,15 @@ body {
   height: 200px;
   margin: 50px 70px 90px 110px;
   padding: 20px 30px 40px 50px;
+}
+
+.block-1 {
+  background-color: brown;
+  width: 150px;
+  height: 150px;
+  padding: 30px;
+  border: 5px solid black;
+  /* box-sizing: border-box; */
 }
 
 .inline {
@@ -66,8 +80,14 @@ body {
     - 2 valores: top/botton left/right.
     - 1 valores: top/right/botton/left.
 
-  - Width
-  - Height
+  - Width: Ancho 
+  - Height: Alto
+
+  - box-sizing: Es la propiedad que nos permite controlar el cálculo que hace el navegador a
+  la hora de modificar las propiedades content, padding y border. Los 2 valores que podemos darle
+  son: 
+    - content-box: Valor por defecto.
+    - border-box: cálculo de tamaño del elemento incluyendo el padding y el border.
 
   NOTA
   - No puedemos dar medida a elementos en line, solo a elementos de tipo bloque.
@@ -77,4 +97,5 @@ body {
   - Se recomienda que se tenga conocimiento de cada linea de código que se escribe y su razon de ser.
   - Se utiliza margin cuando quieres saparar tu caja de los elementos que la rodean.
   - Se utiliza padding cuando quieres aumentar el tamaño de la caja y los bordes del contenido.
+  - Utilizar el selector universal para establecer el box-sizing es una buena practica.
 */
