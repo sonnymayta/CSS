@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(39, 39, 39);
+  color: white;
+  margin: 0;
+}
+
+.box {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  background-color: aquamarine;
+  width: 300px;
+  height: 300px;
+  overflow: auto;
+}
+
+.box-t {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  background-color: steelblue;
+  width: 300px;
+  height: 300px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.box-t-1, .box-t-2 {
+  padding: 15px;
+  background-color: yellowgreen;
+}
+
+.text {
+  width: 350px;
+  color: black;
+}
+
+.text-1 {
+  margin: 0;
+}
+
+/* 
+  Decimos que un contenido se deborda cuando la caja es más pequeña que el contenedor.
+
+  Overflow: Es la propiedad que controla que debe hacer la caja cuando su contenido se desborda
+  del contenedor. Es un shorthand que engloba everflow-x y overflow-y.
+  Tiene cuatro posibles valores:
+    - visible: Es el valor por defecto.
+    - hidden: El contenido que se desborde no sera visible. Si aplicamos estra propiedad en un 
+    solo eje, el otro se pondrá automáticamente en el valor scroll.
+    - scroll: Apareceran barras de scroll en el eje asignado (x, y o ambas).
+    - auto: Aparecerán barras de scroll en el caso que hicieran falta.
+*/
