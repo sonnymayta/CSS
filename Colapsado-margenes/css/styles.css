@@ -1,0 +1,43 @@
+body {
+  background-color: #333;
+  color: white;
+  margin: 0;
+}
+
+.header {
+  background-color: lightcoral;
+  height: 100px;
+  margin-bottom: 20px;
+  /* overflow: hidden; */
+  /* padding-top: 1px; */
+  border-top: 1px solid lightcoral;
+}
+
+.box-1, .box-2 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  background-color: lightcyan;
+  width: 300px;
+  height: 300px;
+}
+
+.box-2 {
+  margin-top: 20px;
+}
+
+.title {
+  margin: 0;
+  margin-top: 20px;
+}
+/* 
+  Los margenes verticales colapsan
+  - Como solución general se recomienda que se utilize el margin-botton para dar espacio
+  entre objectos.
+
+  Colapsado de margenes entre padres e hijos
+  Trucos para solucionar este error:
+  - Al contenedor agregarle un overflow: hidden;
+  - Al contenedor agregarle un padding de cualquier dimension.
+  - Al contenedor agregarle un border-top.
+*/
