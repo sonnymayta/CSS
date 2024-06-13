@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  color: white;
+}
+
+.text {
+  text-align: right;
+}
+
+.box {
+  background-color: black;
+  width: 100px;
+  padding: 10px 0;
+  margin: 20px 0;
+  border: 2px solid lightcoral;
+  /* Centra el contenido */
+  text-align: center;
+}
+
+.link {
+  background-color: blueviolet;
+  color: white;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Las imagenes por defecto son display inline block */
+.img {
+  display: block;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-container {
+  background-color: aquamarine;
+  text-align: center;
+}
+
+.img-1 {
+  width: 200px;
+}
+
+/* 
+  text-align
+  Es la propiedad que nos permite alinear horizontalmente el contenido de un elemento de bloque
+  siempre que el contenido NO TENGA ANCHO DECLARADO.
+  Acepta cuatro posible valores: 
+   - text-align:left > alinear el contenido a la izquierda.
+   - text-align:right > alinear el contenido a la derecha.
+   - text-align:center > alinear el contenido al centro.
+   - text-align:justify > alinear el contenido de forma justificada. NO SE RECOMIENDA USARLO.
+*/
