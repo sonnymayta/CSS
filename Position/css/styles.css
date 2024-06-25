@@ -38,16 +38,26 @@ body {
 
 .box-3 {
   background-color: lightgreen;
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  position: relative;
+  /* right: 0;
+  bottom: 0; */
+  left: 250px;
+  z-index: -1;
 }
 
 .box-4 {
   background-color: lightseagreen;
   position: absolute;
-  bottom: 100px;
-  left: 100px;
+  /* bottom: 100px;
+  left: 100px; */
+  z-index: 1;
+  /* No se recomienda usar numeros consecutivos */
+}
+
+.box-5 {
+  background-color: lightsalmon;
+  position: relative;
+  top: 50px;  
 }
 
 .link {
@@ -80,7 +90,9 @@ body {
     - botton: El elemento se movera desde la parte inferior la distancia que le ayamos indicado.
     - left: El elemento se movera desde la parte izquierda la distancia que le ayamos indicado.
 
-    z-index: Nos permite mover el elemento en el contexto de apilamiento (eje z).
+    z-index: Nos permite mover el elemento en el contexto de apilamiento (eje z). Podemos
+    ordenar elementos super puestos para controlar cual se colocara por delante y cual por
+    detras.
   
   NOTA: Si un elemento le declaramos la propiedad top y/o left, las propiedades botton y/o right 
   no funcionaran.
