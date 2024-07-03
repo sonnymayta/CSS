@@ -18,6 +18,19 @@ body {
   font-size: 2rem;
 }
 
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: lightgreen;
+}
+
+.box-children {
+  width: auto;
+  height: 50%;
+  margin-left: 25px;
+  background-color: lightseagreen;
+}
+
 /* 
   Las medidas en CSS se pueden agrupar en 2 grupos, absolutas y relativas.
 
@@ -50,4 +63,11 @@ body {
   - Usar rem simpre para tamaños de fuente.
   - Si la medida tiene que crecer proporcionalmente al texto utilizar em.
   - Si la medida tiene que ser siempre relativa al tamaño de fuente de la raiz.
+
+  %: cuando usamos porcentage usamos de referencia el tamaño del contenedor y el navegador calcula
+  ese porcentage. Esto no ocurre cuando usamos transform.
+  auto: cuando usamos auto le pedimos al navegador que calcule en funcion del espacio disponible.
+
+  Recomendaciones
+  - Utilizar porcentaje para comportamiento responsive.
 */
