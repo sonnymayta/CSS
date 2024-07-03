@@ -1,0 +1,23 @@
+body {
+	margin: 0;
+}
+.box {
+	background-color: lightcoral;
+	width: 100vmin;
+	height: 100vh;
+}
+/* 
+  Viewport
+	El viewport es el area util donde se mostrara la pagina web. IMPORTANTE, tener en cuenta que es el area 
+	visible sin hacer scroll.
+	Podemos usar el viewport como dedida de varias formas:
+	- vw: viewport width, hace referencia al ancho del viewport.
+	- vh: viewport height, hace referencia al ancho del viewport.
+	- vmax: utiliza el valor más grande entre el ancho y el alto del viewport.
+	- vmin: utiliza el valor más pequeño entre el ancho y el alto del viewport.
+	
+	1vw = 1% del ancho del viewport.
+	1vh = 1% del alto del viewport.
+	1vmin = 1% del valor que sea más pequeño de viewport.
+	1vmax = 1% del valor que sea más grande del viewport.
+*/
