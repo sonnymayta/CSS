@@ -31,6 +31,19 @@ body {
   background-color: lightseagreen;
 }
 
+.box-a {
+  width: 200px;
+  /* En este caso la propiedad de height se convierte en auto */
+  height: 35%;
+  background-color: lightcoral;
+}
+
+.box-a-children {
+  width: 50%;
+  height: 50%;
+  background-color: lightgrey;
+}
+
 /* 
   Las medidas en CSS se pueden agrupar en 2 grupos, absolutas y relativas.
 
@@ -66,7 +79,14 @@ body {
 
   %: cuando usamos porcentage usamos de referencia el tamaño del contenedor y el navegador calcula
   ese porcentage. Esto no ocurre cuando usamos transform.
+  Cuando estamos dentro de un contenedor, este tiene que tener un alto declarado, si no no podra 
+  calcular el porcentaje. Si se le aplica una medida con porcentaje se sustituira automaticamente
+  con auto.
   auto: cuando usamos auto le pedimos al navegador que calcule en funcion del espacio disponible.
+  Cuando utilizamos auto en el alto lo calculara el navegador en base al contenido del elemento.
+
+  NOTA: height es una propiedad que tienes que usar con cuidado. Si no es necesario establecer
+  un alto, deja que el contenido sea el que decida el alto del elemento.
 
   Recomendaciones
   - Utilizar porcentaje para comportamiento responsive.
