@@ -9,11 +9,26 @@
   Currentcolor
   Es la palabra clave que se puede usar en lugar de cualquier valor de color y usara el valor ya sea 
   establecido o heredado en la propiedad color.
+
+  RGB
+  En el modo RGB tenemos tres canales (red, green, blue) y tenemos 8 bits de colores por canal, 
+  (cada bit tiene dos posibles valores 0 ó 1) lo que significa que tenemos 2^8 posible valores,
+  que van desde 0 hasta 255.
+  Esto nos da un total de 255 * 255 * 255 = 16.581.375 colores.
+  Su sintaxis es rgb(R, G, B)
+
+    - Si ponemos todos los canales a 0 tendremos un negro puro y si los ponemos  a 255 tendremos un blanco.
+    - Para movernos por la gama de grises debemos poner los 3 canales con el mismo valor, si ponemos los 
+    3 canales a 128 tendremos el gris puro.
+    - El modo RGB nos da la opción de utilizar un cuarto canal que corresponde al canal alpha, es decir, la
+    transparencia y su valor va desde 0 a 1. Tenemos dos sintaxis para utilizar el canal alpha: 
+      - rgba(R, G, B, A)
+      - rgb(R G B / A)
 */
 
 body {
   margin: 0;
-  background-color: #333;
+  /* background-color: #333; */
 }
 
 .box {
@@ -37,4 +52,17 @@ body {
   height: 50%;
   background-color: currentColor;
   border: 2px solid red;
+}
+
+.box-b {
+  width: 300px;
+  height: 300px;
+  background-color: rgb(0, 255, 255);
+  box-shadow: 10px 10px rgb(0 0 0 / 0.1);
+}
+
+.box-b-child {
+  width: 50%;
+  height: 50%;
+  background-color: rgb(0 0 0 / 0.1);
 }
