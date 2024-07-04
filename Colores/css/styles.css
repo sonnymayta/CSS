@@ -43,6 +43,31 @@
   Tambien tenemos la opción de usar transparencias en hexadecimal añadiendo un cuarto canal que sigue las 
   mismas normal.
 
+  HSL / HSLA
+  El modo de color HSL es el más intuitivo para los humanos. Su nombre viene de las siglas HUE (tono), 
+  saturation (saturación) y lightness (luminosidad).
+  El primer valor es el angulo en el circulo chromatico donde 0 y 360 será el color rojo. Hay ciertos valores 
+  que pueden servir como referencia para relacionar mejor los colores con sus angulos.
+    - 0 -> rojo
+    - 60 -> amarillo
+    - 120 -> verde
+    - 180 -> cyan
+    - 240 -> azul
+    - 300 -> magenta
+  El segundo valor es la saturación o la intencidad del color 0% -> gris y 100% -> color puro.
+  El tercer valor es la luminocidad del color 0% -> negro, nada de luz, 100% -> blanco luz maxima.
+
+  Nota: Es importante que aunque el valor de saturación o luminocidad sea 0 hay que poner 0% si no, 
+  no funcionara.
+
+  El modo HSL tambien admite transparencia y su sintaxis es la misma que la del modo RGB. Tenemos
+  dos sintaxis disponibles.
+   - hsla(a, s, l, a)
+   - hsl(h s l / a)
+  En ambos casos el valor alpha va de 0 a 1
+
+  Existen otros modos de color en los que se esta trabajando que serían CMYK, HWB, Lab, y Lch. Todos
+  en el borrador del modulo de color de nivel 4 pero aún no es estandar.
 */
 
 body {
@@ -92,4 +117,11 @@ body {
   /* Para transparencia se pone un cuarto canal como se ve a continación */
   background-color: #5db8a480;
   counter-reset: #9a1daa;
+}
+
+.box-d {
+  width: 300px;
+  height: 300px;
+  background-color: hsl(60, 100%, 50%);
+  color: hsl(30 100% 50% / 0.5);
 }
