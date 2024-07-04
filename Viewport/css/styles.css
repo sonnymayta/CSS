@@ -6,6 +6,16 @@ body {
 	width: 100vmin;
 	height: 100vh;
 }
+
+.box-1 {
+	width: 100%;
+	max-width: 600px;
+	min-width: 300px;
+	height: 200px;
+	max-height: 300px;
+	min-height: 100px;
+	background-color: lightgreen;
+}
 /* 
   Viewport
 	El viewport es el area util donde se mostrara la pagina web. IMPORTANTE, tener en cuenta que es el area 
@@ -20,4 +30,14 @@ body {
 	1vh = 1% del alto del viewport.
 	1vmin = 1% del valor que sea más pequeño de viewport.
 	1vmax = 1% del valor que sea más grande del viewport.
+
+	Limitadores de ancho y alto
+	Cuando establecemos un with y un height con una medida que es relativa, es posible que no
+	queramos que se respete una medida en todos sus casos.
+
+	min-width: indica el ancho minimo que puede alcanzar el elemento
+	max-width indica el ancho maximo que puede alacnazar el elemento
+	min-height: indica el alto minimo que puede alcanzar el elemento
+	max-height: inidca el alto maximo que puede alacanzar el elemento
+
 */
