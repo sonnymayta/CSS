@@ -1,0 +1,20 @@
+/* 
+  Tipografia
+  La tipografia es la ciencia que estudia el diseño y el uso de los tipos de letras.
+   - Las funtes son el tipo especifico de letra.
+   - Los glifos son cada uno de los dibujos que representan cada simbolo de la fuente, incluidos los 
+   espacios.
+   - Los estilos de fuente son las modificaciones que se hace a las fuentes, como el grosor o la 
+   inclinacion.
+   - Familia tipografica, son las diferentes fuentes que pertenecen a una misma fuente base.
+   - Cuando usamos una propiedad text-* estamos afectando a un bloque completo.
+   - Cuando usamos una propiedad font-* afectamos a la funte del texto.
+  
+   Fuentes predeterminadas, son las fuentes que se consideran seguras ya que no son genericas y no
+   establecen una familia tipografica, si no un estilo de fuente: 
+    - serif: fuentes que tienen serifas (adornadas en los caracteres).
+    - sans-serif: fuentes sin serifas.
+    - monospace fuente que tiene el mismo espaciado en todos sus caracteres.
+    - cursive: funte que pretende emular escritura a mano, con ligaduras y trazos fluidos.
+    - fantasy: fuentes que suelen ser decorativas
+*/
