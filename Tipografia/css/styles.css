@@ -77,6 +77,17 @@
       - offsetY: desplazamiento vertical
       - blur: desenfoque
       - color, por defecto coge el del texto
+
+  Espaciado en fuentes y texos
+    - letter-spacing: establece la separación entre caracteres, se puede establecer en cualquier medida
+    valida para CSS.
+    - word-spacing: establece la separación entre palabras, se puede establecer en cualquier medida 
+    valida para CSS.
+    - line-height: establece el alto de cada linea, se puede dar un medida concreta o se puede poner
+    un numero que se multiplicara por el font size del texto al que lo estamos aplicando.
+
+  Orientación del texto
+    - writing-mode: establece la dirección del texto.
 */
 
 @font-face {
@@ -96,4 +107,12 @@ p {
   text-transform: capitalize;
   text-decoration: overline;
   text-shadow: 3px 3px 0 red;
+}
+
+.text-a {
+  font-family: monospace;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+  line-height: 5;
+  writing-mode: vertical-lr;
 }
