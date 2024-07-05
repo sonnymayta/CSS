@@ -17,4 +17,15 @@
     - monospace fuente que tiene el mismo espaciado en todos sus caracteres.
     - cursive: funte que pretende emular escritura a mano, con ligaduras y trazos fluidos.
     - fantasy: fuentes que suelen ser decorativas
+
+  Funetes desde un servidor remoto, son fuentes que se encuentran en un servidor y que nosotros descargamos 
+  para su uso, la más famosa es google fonts.
+
+  Siempre que utilicemos fuentes no genericas, debemos poner fuentes genericas de fallback (respaldo).
 */
+
+p {
+  color: black;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+}
