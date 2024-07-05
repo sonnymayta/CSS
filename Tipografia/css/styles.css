@@ -26,10 +26,43 @@
   NOTA
   Si vas a usar una gran cantidad de iconos en tu web compensa usar la libreria remota, pero si solo
   usaras unos pocos es mejor descargarlos en formato svg y utilizarlos como imagenes.
+
+  Formatos de fuentes
+    - True Type Font (TTF): fue el primer formato estandar. 
+    - Open True Type Font (OTF): facilita o implementa la creación de curvas.
+    - Web Open Font Format (WOFF) (WOFF2): es un formato mucho más ligero y mejora el rendimiento.
+    Funciona a travez de metadatos. WOFF tiene soporte total y WOFF2 no funciona en internet explorer.
+    - Scalable Vector Graphics (SVG): para efectos y animaciones sobre el texto, no es recomendable usarlo
+    en el texto generico de la web, tiene muchos problemas.
+    - Embedded Open Type (EOT): primer formato digital propuesto para sitios web y es comprimido. Se quedo
+    como una propuesta pero no pasó a ser un estandar.
+    
+  Regla @font-face
+  Esta es la forma de utilizar fuentes que tenemos descargadas y que no traemos de un servidor remoto,
+  cuando utilizamos google fonts, esto es lo que esta pasando de fondo.
+  La sintaxis es:
+    @font-face: 
+      - font-family: nombre de la familia, se lo asignamos nosotros:
+        src: aqui ponemos dos tipos de valores.
+          Local(): ponemos el nombre de la fuente para buscarla en el ordenador del usuario, de esa forma 
+          podemos evitar descargarlo.
+          url(): si no encontramos la fuente procedemos a descargarla.
+          Existe otro valor menos usado que es format.
+          format(): este valor lo pasaremos de forma opcional si queremos ser más especificos con la fuente
+          que vamos a buscar o descargar, si no podemos cogerá el primer formato soportado, si lo ponemos
+          solo usara el que hemos establecido, si no lo encuentra no hará nada.
+    Podemos añadirle más valores como font-style, font-weight y font-display(experimental), pero esos 
+    son opcionales.
 */
+
+@font-face {
+  font-family: "title-font-main";
+  src: local("Evgeny - Regular"), url("../assets/fonts/Evgeny-Regular.ttf");
+}
 
 p {
   color: black;
-  font-family: "Roboto Mono", monospace;
+  /* font-family: "Roboto Mono", monospace; */
+  font-family: "title-font-main";
   font-weight: 400;
 }
