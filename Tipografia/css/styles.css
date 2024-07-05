@@ -22,6 +22,10 @@
   para su uso, la más famosa es google fonts.
 
   Siempre que utilicemos fuentes no genericas, debemos poner fuentes genericas de fallback (respaldo).
+
+  NOTA
+  Si vas a usar una gran cantidad de iconos en tu web compensa usar la libreria remota, pero si solo
+  usaras unos pocos es mejor descargarlos en formato svg y utilizarlos como imagenes.
 */
 
 p {
